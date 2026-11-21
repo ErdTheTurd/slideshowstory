@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slideshow Story — Narrated movie nights from your photos</title>
+  <meta name="description" content="Slideshow Story turns your photo albums into narrated movie nights on Apple TV—pan-and-zoom slideshows with spoken chapter titles and soft music. Photos stay on your devices. Coming soon.">
+  <meta name="theme-color" content="#0c0a08">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html">Slideshow Story</a>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="brand">
+      <div class="hero-visual" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <defs>
+            <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2a2014"/>
+              <stop offset="50%" stop-color="#1a1410"/>
+              <stop offset="100%" stop-color="#0c0a08"/>
+            </linearGradient>
+            <linearGradient id="screen" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#3d3224"/>
+              <stop offset="100%" stop-color="#1f1810"/>
+            </linearGradient>
+            <radialGradient id="lamp" cx="70%" cy="35%" r="45%">
+              <stop offset="0%" stop-color="#c9a46c" stop-opacity="0.35"/>
+              <stop offset="60%" stop-color="#c9a46c" stop-opacity="0.06"/>
+              <stop offset="100%" stop-color="#c9a46c" stop-opacity="0"/>
+            </radialGradient>
+            <clipPath id="tv-screen">
+              <rect x="420" y="180" width="720" height="405" rx="8"/>
+            </clipPath>
+          </defs>
+          <rect width="1440" height="900" fill="url(#glow)"/>
+          <ellipse cx="1000" cy="320" rx="520" ry="380" fill="url(#lamp)"/>
+          <!-- Room floor reflection -->
+          <ellipse cx="780" cy="780" rx="380" ry="40" fill="#c9a46c" opacity="0.04"/>
+          <!-- TV bezel -->
+          <rect x="400" y="160" width="760" height="445" rx="16" fill="#12100e" stroke="#c9a46c" stroke-opacity="0.25" stroke-width="1.5"/>
+          <rect x="420" y="180" width="720" height="405" rx="8" fill="url(#screen)"/>
+          <!-- Slideshow frames (ken burns target) -->
+          <g class="frame-photos" clip-path="url(#tv-screen)">
+            <rect x="420" y="180" width="720" height="405" fill="#2a2218"/>
+            <!-- Soft landscape suggestion -->
+            <ellipse cx="780" cy="420" rx="280" ry="90" fill="#4a3a28" opacity="0.5"/>
+            <ellipse cx="620" cy="380" rx="120" ry="160" fill="#3a2e22" opacity="0.45"/>
+            <ellipse cx="920" cy="360" rx="100" ry="140" fill="#352818" opacity="0.4"/>
+            <rect x="420" y="480" width="720" height="105" fill="#1a1410" opacity="0.6"/>
+            <!-- Warm horizon line -->
+            <line x1="480" y1="470" x2="1080" y2="450" stroke="#c9a46c" stroke-opacity="0.2" stroke-width="1"/>
+          </g>
+          <!-- Screen vignette -->
+          <rect x="420" y="180" width="720" height="405" rx="8" fill="none" stroke="#c9a46c" stroke-opacity="0.15"/>
+          <!-- Chapter title on screen -->
+          <text x="780" y="360" text-anchor="middle" fill="#f0e6d4" font-family="Georgia, serif" font-size="28" opacity="0.85">Summer, 2019</text>
+          <text x="780" y="395" text-anchor="middle" fill="#c9a46c" font-family="Georgia, serif" font-size="14" letter-spacing="3" opacity="0.7">CHAPTER THREE</text>
+          <!-- TV stand -->
+          <rect x="700" y="605" width="160" height="12" rx="2" fill="#1a1612"/>
+          <rect x="760" y="617" width="40" height="55" fill="#14110e"/>
+          <rect x="680" y="672" width="200" height="10" rx="2" fill="#1a1612"/>
+          <!-- Soft ambient particles -->
+          <circle cx="280" cy="220" r="1.5" fill="#c9a46c" opacity="0.35"/>
+          <circle cx="1180" cy="280" r="2" fill="#c9a46c" opacity="0.25"/>
+          <circle cx="200" cy="500" r="1" fill="#e0c089" opacity="0.3"/>
+          <circle cx="1240" cy="520" r="1.5" fill="#c9a46c" opacity="0.2"/>
+        </svg>
+      </div>
+
+      <div class="wrap">
+        <h1 class="brand" id="brand">Slideshow <span>Story</span></h1>
+        <p class="hero-lead">Turn your photo albums into narrated movie nights—pan-and-zoom slideshows with spoken chapter titles and soft music, right on your Apple TV.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#coming-soon">Coming soon to Apple&nbsp;TV</a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+        <p class="status-note">Not yet available on the App Store</p>
+      </div>
+    </section>
+
+    <section id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <p class="section-label">How it works</p>
+        <h2 class="section-title" id="how-title">Three steps to movie night</h2>
+        <p class="section-lead">From a quiet evening on the couch to a living-room premiere of your own memories.</p>
+        <ol class="steps">
+          <li>
+            <h3>Choose an album</h3>
+            <p>Pick a photo album from your library. Slideshow Story works with the photos already on your devices.</p>
+          </li>
+          <li>
+            <h3>Add chapters &amp; narration</h3>
+            <p>Group moments into chapters. Spoken titles guide the story while soft music sets the mood.</p>
+          </li>
+          <li>
+            <h3>Watch on the big screen</h3>
+            <p>Sit back as pan-and-zoom motion brings stills to life—a private theater for the people you love.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="privacy" class="privacy-section" aria-labelledby="privacy-title">
+      <div class="wrap privacy-grid">
+        <div>
+          <p class="section-label">Privacy</p>
+          <h2 class="section-title" id="privacy-title">Your photos stay on your devices</h2>
+          <p class="section-lead" style="margin-bottom: 1.5rem;">Slideshow Story is built so your memories never need to leave home. Processing happens on-device. We don’t collect your photos or personal data.</p>
+          <a href="privacy.html">Read the full privacy policy</a>
+        </div>
+        <ul class="privacy-points">
+          <li>
+            <strong>On-device processing</strong>
+            <p>Slideshows are created and played locally. Your library isn’t uploaded to our servers.</p>
+          </li>
+          <li>
+            <strong>No accounts required</strong>
+            <p>There’s nothing to sign up for. Open the app, pick an album, and begin.</p>
+          </li>
+          <li>
+            <strong>No analytics or trackers</strong>
+            <p>This site and the app are designed without third-party tracking. We don’t sell data.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="coming-soon" class="coming-soon" aria-labelledby="soon-title">
+      <div class="wrap">
+        <p class="section-label">Availability</p>
+        <h2 class="section-title" id="soon-title">Coming soon to Apple&nbsp;TV</h2>
+        <p>Slideshow Story is in development and is not yet on the App Store. We’ll share news here when it’s ready to download.</p>
+      </div>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <p class="section-label">FAQ</p>
+        <h2 class="section-title" id="faq-title">Questions</h2>
+        <div class="faq">
+          <details>
+            <summary>What is Slideshow Story?</summary>
+            <p>An Apple TV app that turns your photo albums into narrated movie nights—cinematic pan-and-zoom slideshows with spoken chapter titles and soft background music.</p>
+          </details>
+          <details>
+            <summary>Where do my photos go?</summary>
+            <p>They stay on your devices. Slideshow Story processes photos on-device and does not upload your library to our servers.</p>
+          </details>
+          <details>
+            <summary>Is it available to download?</summary>
+            <p>Not yet. Slideshow Story is coming soon to Apple TV and is not currently listed on the App Store.</p>
+          </details>
+          <details>
+            <summary>Will I need an account?</summary>
+            <p>No. The app is designed to work without creating an account or signing in.</p>
+          </details>
+          <details>
+            <summary>How can I get help or ask a question?</summary>
+            <p>Email us at <a href="mailto:support@slideshowstory.com">support@slideshowstory.com</a>. More details are on our <a href="support.html">support page</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-brand">Slideshow Story</p>
+          <p class="footer-meta">Coming soon to Apple&nbsp;TV · <a href="mailto:support@slideshowstory.com">support@slideshowstory.com</a></p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="mailto:support@slideshowstory.com">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">&copy; 2026 Slideshow Story. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
